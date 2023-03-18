@@ -9,9 +9,15 @@
 <body>
     <h1 id="name">shahid Nawaz</h1>
     <button id="change">change text</button>
+    <p id="java">javascript is .... </p>
+    <button id="append">append text</button>
     <script>
         document.getElementById('change').onclick=function(){
             document.getElementById('name').innerHTML = "shahiduu";
+
+        }
+        document.getElementById('append').onclick=function(){
+            document.getElementById('java').innerHTML = document.getElementById('java').innerHTML+"My faiverate"+"<br>" ;
 
         }
     </script>
