@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulate style in javascript</title>
+</head>
+<body>
+    <p id="p1">javaScript is papular </p>
+    <button id="red">for red color</button>
+    <button id="blue">for blue color</button>
+    <button id="green">for green color</button>
+    <button id="in">increase font size</button>
+    <button id="de">decrease font size</button>
+    <script>
+        document.getElementById("in").onclick=function(){
+            document.getElementById("p1").style.fontSize="70px";
+        }
+        document.getElementById("de").onclick=function(){
+            document.getElementById("p1").style.fontSize="20px";
+        }
+        document.getElementById("red").onclick=function(){ document.getElementById("p1").style.color="red";} 
+        document.getElementById("blue").onclick=function(){ document.getElementById("p1").style.color="blue";} 
+        document.getElementById("green").onclick =function(){document.getElementById("p1").style.color="green";} 
+    </script>
+</body>
+</html>
