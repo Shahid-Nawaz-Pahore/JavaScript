@@ -8,14 +8,45 @@
 </head>
 <body>
     <script>
-        function square(x){
-            console.log(`square of ${x} is equal to : ${x*x}`)
-            return (x%2===0)
+        // function square(x){
+        //     console.log(`square of ${x} is equal to : ${x*x}`)
+        //     return (x%2===0)
+        // }
+        // for(let i=0;i<=10;i++){
+        //     if(square(i)===true)
+        //    console.log(`${square(i)} even `)
+        // }
+//pass array and variable as argumant
+
+
+
+//function expression
+//  const findTarget=function(array,target){
+//            for(let i=0;i<array.length;i++){
+//             if(array[i]===target){
+//                 return i
+//             }
+//            }
+//            return -1
+//         }
+//         const arr=[1,2,3,4,5,6]
+//         const a=findTarget(arr,4)
+//         console.log(a)
+
+
+//arrow function
+ const findTarget=(array,target)=>{
+           for(let i=0;i<array.length;i++){
+            if(array[i]===target){
+                return i
+            }
+           }
+           return -1
         }
-        for(let i=0;i<=10;i++){
-            if(square(i)===true)
-           console.log(`${square(i)} evev `)
-        }
+        const arr=[1,2,3,4,5,6]
+        const a=findTarget(arr,3)
+        console.log(a)
+
     </script>
 </body>
 </html>
