@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramerter Disctructuring</title>
+</head>
+<body>
+   <script>
+    //parameter destructuring
+    const person={
+        "person name":'shahid Nawaz',
+        "person age":23,
+        "person gender":"male"
+    }
+    //with out distructuring
+    // const display=(person)=>{
+    //     console.log(`person name = ${person["person name"]}`)
+    // }
+
+    const obj={
+        key1:'value1',
+        key2:'value2'
+    }
+
+    const display=({key1,key2})=>{
+        console.log(key1,key2)
+    }
+    display(obj)
+   </script> 
+</body>
+</html>
